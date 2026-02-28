@@ -17,7 +17,7 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://MehtaKartik:$HF_TOKEN@huggingface.co/spaces/MehtaKartik/Search_engine_llm mainname: Sync to Hugging Face hub
+        run: git push https://MehtaKartik:$HF_TOKEN@huggingface.co/spaces/MehtaKartik/Search_engine_llm mainb
 on:
   push:
     branches: [main]
