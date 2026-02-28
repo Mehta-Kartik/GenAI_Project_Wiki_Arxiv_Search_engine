@@ -1,5 +1,0 @@
-streamlit
-langchain-groq
-langchain-community
-langchain-chroma
-chromadb
