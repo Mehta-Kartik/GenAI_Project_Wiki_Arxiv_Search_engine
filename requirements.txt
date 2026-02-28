@@ -1,3 +1,4 @@
+streamlit
 langchain
 python-dotenv 
 ipykernel
@@ -27,4 +28,5 @@ unstructured
 numexpr
 pytube
 validators==0.28.1
+
 youtube_transcript_api
