@@ -1,4 +1,4 @@
-# LangChain Chat with Search
+# Wiki_Arxiv_DuckDuckGo_Search_Engine
 
 A Streamlit-based AI chat application that combines Groq-hosted LLaMA 3.1 with external knowledge tools including Wikipedia, Arxiv, and DuckDuckGo search to answer technical questions in a more grounded and interactive way.[1]
 
@@ -122,10 +122,9 @@ Even though the app takes the API key from the Streamlit sidebar at runtime, usi
 Install the required packages with:[1]
 
 ```bash
-pip install streamlit langchain-groq langchain-community langchain-classic langchain-core python-dotenv tenacity requests wikipedia arxiv duckduckgo-search
+pip install -r requirements.txt
 ```
 
-If you prefer, you can also save them into a `requirements.txt` file for reproducible setup.[1]
 
 ## Run the App
 
@@ -173,21 +172,21 @@ The callback handler streams intermediate reasoning activity into the app interf
 
 If the agent response indicates an iteration limit or time limit issue, or if an exception occurs during execution, the app falls back to a direct model call using the same augmented prompt.[1]
 
-This makes the system more robust by ensuring users still get an answer even when tool-driven reasoning fails.[1]
+This makes the system more robust by ensuring users still get an answer even when tool-driven reasoning fails
 
 ## Strengths
 
-- Easy to run locally with a single Streamlit file.[1]
-- Combines search tools with LLM reasoning for more grounded answers.[1]
-- Includes practical retry and fallback behavior.[1]
-- Preserves conversational continuity through session-managed chat history.[1]
+- Easy to run locally with a single Streamlit file.
+- Combines search tools with LLM reasoning for more grounded answers.
+- Includes practical retry and fallback behavior.
+- Preserves conversational continuity through session-managed chat history.
 
 ## Limitations
 
-- The app depends on external APIs and internet access for search-based answers.[1]
-- Chat history is injected as plain text, which is simple but may become harder to scale for long conversations.[1]
-- Search validation rules are basic and may reject some useful advanced queries.[1]
-- The fallback direct LLM call does not use tool outputs when the agent fails mid-run.[1]
+- The app depends on external APIs and internet access for search-based answers.
+- Chat history is injected as plain text, which is simple but may become harder to scale for long conversations.
+- Search validation rules are basic and may reject some useful advanced queries.
+- The fallback direct LLM call does not use tool outputs when the agent fails mid-run.
 
 ## Future Improvements
 
@@ -198,9 +197,6 @@ This makes the system more robust by ensuring users still get an answer even whe
 - Add prompt templates specialized for technical tutoring or research workflows.[1]
 - Add rate-limit handling and better exception reporting in the UI.[1]
 
-## Suggested Filename
-
-If you want the repository to look clean, a good project name would be **LangChain Chat with Search** and the main file can be named `app.py` or `streamlit_app.py`.[1]
 
 ## License
 
