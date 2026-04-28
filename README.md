@@ -94,7 +94,6 @@ A minimal structure for this project would look like this:[1]
 └── README.md
 ```
 
-If you are keeping the exact code you shared in a single file, `app.py` is a practical filename for the Streamlit entry point.[1]
 
 ## Setup
 
